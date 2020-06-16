@@ -336,9 +336,11 @@ const TSVExportRenderer = {
         height: `${window.innerHeight / 2}px`
       },
       attrs: {
+        
         readOnly: true
       },
       domProps: {
+        class: "dataTable",
         value: result.map(r => r.join('\t')).join('\n')
       }
     })
